@@ -5,25 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home_Page</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
 </head>
-<body style="background: #ff5c33;">
-	<center>
+<body>
        <div class="container">
-            <h1> My First Page</h1>
-            <div class="row" style="margin-right: 70px;margin-left: 70px;margin-top: 40px;" >
-            	<div class="col-md-6" style="width:200px;height: 350px; background:white;" >
-            		<h1 >pratik</h1>
+            <h1 class="center"> My First Page</h1>
+            <div class="row rrow " >
+            	<div class="col-md-6 col1 rounded " >
+            		<h1 class="blk" >Sign In</h1>
+            		<div >
+            		<p class="blk add_top_margin top_bottom ">USERNAME</p>
+            		<input class="form-control add_border-radius" type="text" name="username" placeholder="Username">
+            		<p class="blk add_top_margin top_bottom ">PASSWORD</p>
+            		<input class="form-control" type="text" name="username" placeholder="Password">
+            		<button class="btn btnn form-control top_bottom_btn">Sign In</button>
+            		</div>
             	</div>
 
-            	<div class="col-md-6" style="width:200px;height: 350px; background:#ff1a8c;align-items: center;">
-            		<div style="margin: 20px;margin-top: 100px;">
-            		<h1 style="color: white;font-style: bold;">Welcome to login</h1>
-            		<p style="color:white">Don't have account ?<p>
-            		<button class="btn" style="background:#ff1a8c;border-width: 1px;border-color: white; border-radius: 30px;">Sign Up</button>
+            	<div class="col-md-6 col2 ">
+            		<div class="top_marg">
+            		<h1 >Welcome to login</h1>
+            		<p>Don't have account ?<p>
+            		<button class="btn btnn">Sign Up</button>
             		</div>
             	</div>
             </div>
        </div>
-    </center>
 </body>
 </html>
