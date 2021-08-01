@@ -27,10 +27,10 @@ h1{
 }
 .col2{
 	/*width:200px;height: 350px;*/
-	 background:#ff1a8c;align-items: center;
+	 background:#993399;align-items: center;
 }
 .btnn{
-	background:#ff1a8c;border-width: 1px;border-color: white; border-radius: 25px;
+	background:#993399;border-width: 1px;border-color: white; border-radius: 25px;
 }
 .add_top_margin{
 	margin-top: 20px;
@@ -59,4 +59,11 @@ h1{
 .top_bottom_btn{
 	margin-top: 20px;
 	margin-bottom: 30px;
+}
+.back{
+	background: #595959;
+}
+.webname{
+	font-size: 30px;
+	color: white;
 }
