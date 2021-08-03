@@ -8,6 +8,33 @@
 	<link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 <body>
+<!-- --------------------------------------------------------------------------------- -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAymf3kcc9zuHDZxPyhSSSnqjFtZ43-Go",
+    authDomain: "website-2bf35.firebaseapp.com",
+    projectId: "website-2bf35",
+    storageBucket: "website-2bf35.appspot.com",
+    messagingSenderId: "899401362755",
+    appId: "1:899401362755:web:0d8e24d2e8d18fc83553f6",
+    measurementId: "G-R06CCE30NE"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script type="text/javascript" src="index.js"></script>
+<!-- End FireBase -->
+<!-- ----------------------------------------------------------------------------------- -->
 		<nav class="navbar navbar-default back" >
               <div class="container-fluid">
                 <div class="navbar-header">
@@ -21,10 +48,10 @@
             		<h1 class="blk" >Sign In</h1>
             		<div >
             		<p class="blk add_top_margin top_bottom ">USERNAME</p>
-            		<input class="form-control add_border-radius" type="text" name="username" placeholder="Username">
+            		<input class="form-control add_border-radius" type="text" name="username" placeholder="Username" id="email_field">
             		<p class="blk add_top_margin top_bottom ">PASSWORD</p>
-            		<input class="form-control" type="text" name="username" placeholder="Password">
-            		<button class="btn btnn form-control top_bottom_btn">Sign In</button>
+            		<input class="form-control" type="password" name="username" placeholder="Password" id="pass_field">
+            		<button onclick="login()" class="btn btnn form-control top_bottom_btn">Sign In</button>
             		</div>
             	</div>
 
@@ -32,10 +59,13 @@
             		<div class="top_marg">
             		<h1 >Welcome to login</h1>
             		<p>Don't have account ?<p>
-            		<button class="btn btnn add_bottom_margin">Sign Up</button>
+            		<a href="signup.html">
+            		<button class="btn btnn add_bottom_margin" >Sign Up</button>
+            		</a>
             		</div>
             	</div>
             </div>
        </div>
+
 </body>
 </html>
