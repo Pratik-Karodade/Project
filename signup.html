@@ -17,7 +17,7 @@
     </nav>
 
     <div class="container">
-            <div class="row rrow add_bottom_margin" >
+            <div class="row rrow add_bottom_margin add_top_margin" >
             	<div class="col-md-6 col1 rounded backrnd " >            		
             		<div class="top_marg">
             		<h1 >Welcome to SignUp Form....</h1>
@@ -31,9 +31,9 @@
             		<p class="blk add_top_margin top_bottom ">Email ID</p>
             		<input class="form-control add_border-radius" type="text" name="username" placeholder="Ex-sample@gmail.com" id="email_field" required="username">
             		<p class="blk add_top_margin top_bottom ">Password</p>
-            		<input class="form-control" type="password" name="username" placeholder="Password" id="pass_field">
+            		<input class="form-control" type="password" name="username" placeholder="Password">
             		<p class="blk add_top_margin top_bottom ">Confirm Password</p>
-            		<input class="form-control" type="password" name="username" placeholder="re-Password" id="pass_field">
+            		<input class="form-control" type="password" name="username" placeholder="re-Password">
                     <p class="blk add_top_margin top_bottom ">Mobile Number</p>
             		<input class="form-control" type="text" name="username" placeholder="Mobile Number" >
             		<input type="checkbox" name="agree">
@@ -44,5 +44,15 @@
             	</div>
             </div>
        </div>
+             <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+
+<script src="firebase.js"></script>
+<script type="text/javascript" src="signup.js"></script>
 </body>
 </html>
