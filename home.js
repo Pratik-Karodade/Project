@@ -2,11 +2,7 @@ document.getElementById("login_form").addEventListener("submit",(event)=>{
   event.preventDefault()
 })
 
-firebase.auth().onAuthStateChanged((user)=>{
-  if(user){
-    location.replace("welcome.html")
-  }
-})
+
 
 function login(){
   const email = document.getElementById("email").value;
@@ -14,5 +10,11 @@ function login(){
 
   firebase.auth().signInWithEmailAndPassword(email,password).catch((error)=>{
     document.getElementById("error").innerHTML = error.message;
+  })
+
+  firebase.auth().onAuthStateChanged((user)=>{
+  if(user){
+    location.replace("welcome.html")
+  }
   })
 }

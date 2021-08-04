@@ -23,23 +23,26 @@
             		<h1 >Welcome to SignUp Form....</h1>
             		</div>
             	</div>
-
             	<div class="col-md-6 col2 rounded">
-            		<form>
+
+            		<form onsubmit="signup()" id="logup">
             		<h1 class="blk" >Sign Up</h1>
             		<div >
+            			<small>	<span id="error" style="color: red;text-align: center;"></span> </small>
             		<p class="blk add_top_margin top_bottom ">Email ID</p>
-            		<input class="form-control add_border-radius" type="text" name="username" placeholder="Ex-sample@gmail.com" id="email_field" required="username">
+            		<input id="email" class="form-control add_border-radius" type="text" name="username" placeholder="Ex-sample@gmail.com"  required="username">
             		<p class="blk add_top_margin top_bottom ">Password</p>
-            		<input class="form-control" type="password" name="username" placeholder="Password">
-            		<p class="blk add_top_margin top_bottom ">Confirm Password</p>
+            		<input id="password" class="form-control" type="password" name="username" placeholder="Password" >
+            		<!-- <p class="blk add_top_margin top_bottom ">Confirm Password</p>
             		<input class="form-control" type="password" name="username" placeholder="re-Password">
                     <p class="blk add_top_margin top_bottom ">Mobile Number</p>
             		<input class="form-control" type="text" name="username" placeholder="Mobile Number" >
             		<input type="checkbox" name="agree">
-            		<label style="margin-top: 10px;">I agree all Terms & Conditions</label>
-            		<button onclick="login()" class="btn btnn form-control top_bottom_btn">Create Account</button>
+            		<label style="margin-top: 10px;">I agree all Terms & Conditions</label> -->
+                    
+            		<button type="submit" class="btn btnn form-control top_bottom_btn">Create Account</button>
             		</div>
+
             		</form>
             	</div>
             </div>
@@ -53,6 +56,6 @@
 <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
 
 <script src="firebase.js"></script>
-<script type="text/javascript" src="signup.js"></script>
+<script type="text/javascript" src="sighup.js"></script>
 </body>
 </html>
